@@ -1,4 +1,13 @@
 {
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "settings": { "react": { "version": "detect" } },
+  "plugins": ["import", "jsx-a11y", "react", "react-hooks"],
   "rules": {
     "array-callback-return": "warn",
     "dot-location": ["warn", "property"],
@@ -186,14 +195,10 @@
     "react/react-in-jsx-scope": "error",
     "react/require-render-return": "error",
     "react/style-prop-object": "warn",
-    "react/jsx-no-useless-fragment": "warn",
     "jsx-a11y/accessible-emoji": "warn",
     "jsx-a11y/alt-text": "warn",
     "jsx-a11y/anchor-has-content": "warn",
-    "jsx-a11y/anchor-is-valid": [
-      "warn",
-      { "aspects": ["noHref", "invalidHref"] }
-    ],
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["noHref", "invalidHref"] }],
     "jsx-a11y/aria-activedescendant-has-tabindex": "warn",
     "jsx-a11y/aria-props": "warn",
     "jsx-a11y/aria-proptypes": "warn",
@@ -232,17 +237,9 @@
       { "args": "none", "ignoreRestSiblings": true }
     ],
     "no-useless-constructor": "off",
-    "@typescript-eslint/no-useless-constructor": "warn"
+    "@typescript-eslint/no-useless-constructor": "warn",
+    "prettier/prettier": "warn"
   },
-  "env": {
-    "browser": true,
-    "commonjs": true,
-    "es6": true,
-    "jest": true,
-    "node": true
-  },
-  "settings": { "react": { "version": "detect" } },
-  "plugins": ["import", "jsx-a11y", "react", "react-hooks"],
   "extends": ["../../.eslintrc"],
   "ignorePatterns": ["!**/*"]
 }

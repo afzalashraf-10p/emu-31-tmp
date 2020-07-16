@@ -5,11 +5,14 @@
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "types": ["node", "jest"]
+    "types": ["node", "jest"],
+    "target": "ES5",
+    "module": "CommonJS"
   },
   "files": [
     "../../node_modules/@nrwl/react/typings/cssmodule.d.ts",
-    "../../node_modules/@nrwl/react/typings/image.d.ts"
+    "../../node_modules/@nrwl/react/typings/image.d.ts",
+    "./src/declarations.d.ts"
   ],
   "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx"]
 }

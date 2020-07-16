@@ -1,0 +1,49 @@
+//===========================================
+// -Variables start
+//===========================================
+
+// Colors start
+
+// define your vars or override Carbon vars
+$background: #F0F3F7;
+$white: #fff;
+$black: #000;
+$dark-grey: #e4e6eb;
+$light-grey: #f4f7fb;
+$light-greyB: #e8e8e8;
+$primary: #104ACE;
+$primary-light:lighten(desaturate(adjust-hue($primary, 5.7), 22), 12.4);
+$secondary: #152935;
+$alternate: #25DAED;
+$secondary-dark: #435877;
+$dark:#222222;
+$silver:#C8C8C8;
+$frenchgray:#BEBDC4;
+$mineshaft:#333333;
+$teal:#008487;
+$dark-shade: #565656;
+$disabled:#DDDDE5;
+$light-blue:#E4F8F9;
+$iron:#CDD1D4;
+$shuttlegray:#5A6872;
+$yellow-light:#FFCA87;
+$yellow-dark:darken($yellow-light, 8.8);
+$primary-light:lighten(desaturate(adjust-hue($primary, 5.7), 22), 12.4);
+//status
+$notstarted: #FFB65A;
+$inprogress: #002069;
+$completed: #25DAED;
+
+//alerts
+$warning: #e2620c;
+
+
+// Typography Family
+$font-default: 'Open Sans', sans-serif;
+$font-primery: "Montserrat", sans-serif;
+
+// $font-path: "../fonts";
+
+// ===========================================
+// -Variables end
+// ===========================================

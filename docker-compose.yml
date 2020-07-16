@@ -1,0 +1,38 @@
+version: '3.4'
+services:
+  # application-manager-ui:
+  #   image: application-manager-ui
+  #   ports:
+  #     - 8282:8282
+
+  proxy:
+    image: jwilder/nginx-proxy
+    container_name: proxy
+    networks:
+      naviance:
+        aliases:
+          - application-manager-ui.local.naviance.com
+    ports:
+      - '80:80'
+      - '443:443'
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./certs:/etc/nginx/certs:ro
+
+  application-manager-ui:
+    build:
+      context: .
+      target: ui-runtime-env
+    container_name: application-manager-ui
+    # TO ONLY RUN THE IMAGE, COMMENT OUT THE VOLUME SECTION BELOW
+    # volumes:
+    #   - ./dist/apps/application-manager-ui:/var/www/html:ro
+    ports:
+      - '8282:8282'
+    environment:
+      - VIRTUAL_HOST=application-manager-ui.local.naviance.com
+      - VIRTUAL_PORT=8282
+    networks:
+      naviance:
+networks:
+  naviance:

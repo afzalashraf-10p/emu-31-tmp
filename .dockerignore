@@ -1,0 +1,15 @@
+codefresh*
+docker*
+Docker*
+
+node_modules
+dist
+todo.tasks
+coverage
+lib
+cypress/videos
+cypress/screenshots
+.vscode
+.DS_Store
+certs/*
+config/local.yml

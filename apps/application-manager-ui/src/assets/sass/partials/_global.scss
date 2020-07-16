@@ -1,0 +1,31 @@
+//=======================================================
+// -Global style start
+//=======================================================
+
+// Default style start
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+#application-manger-ui-root {
+  box-sizing: border-box;
+  font-family: $font-default !important;
+  background-color: $background;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+//=======================================================
+// -Global style  end
+//=======================================================
+

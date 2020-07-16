@@ -37,3 +37,16 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Custom
+.npmrc
+newrelic_agent.log
+
+coverage
+node_modules
+db/data/*
+
+*.iml
+certs/
+*.nx-tmp
+local.yml
